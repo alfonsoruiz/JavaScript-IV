@@ -60,91 +60,109 @@ class ProjectManager extends Instructor {
 }
 
 const fred = new Instructor({
-    name: 'Fred',
-    location: 'Bedrock',
+    name: 'fred',
+    location: 'bedrock',
     age: 37,
     gender: 'male',
-    favLanguage: 'JavaScript',
-    specialty: 'Front-end',
-    catchPhrase: `Don't forget the homies`
+    favLanguage: 'javascript',
+    specialty: 'front-end',
+    catchPhrase: `don't forget the homies`
 });
 
-const fred2 = new Instructor({
-    name: 'Fred 2',
-    location: 'Bedrock 2',
-    age: 38,
+const derf = new Instructor({
+    name: 'derf',
+    location: 'kcordeb',
+    age: 73,
     gender: 'F',
-    favLanguage: 'JavaScript 2',
-    specialty: 'Front-end 2',
-    catchPhrase: `Don't forget the homies 2`
+    favLanguage: 'tpircsavaj',
+    specialty: 'end-front',
+    catchPhrase: `homies the forget dont`
 });
 
 const rupert = new Student({
-    name: 'Rupert',
-    location: 'Everywhere',
+    name: 'rupert',
+    location: 'home',
     gender: 'M',
-    previousBackground: 'Kiky',
+    previousBackground: 'kiky',
     className: 'Rupert 101',
-    favSubjects: ['Treats', 'Smacking']
+    favSubjects: ['treats', 'smacking']
 });
 
-const rupert2 = new Student({
-    name: 'Rupert2',
-    location: 'Everywhere2',
+const trepur = new Student({
+    name: 'trepur',
+    location: 'emoh',
     gender: 'F',
-    previousBackground: 'Kiky2',
-    className: 'Rupert 102',
-    favSubjects: ['Treats2', 'Smacking2']
+    previousBackground: 'ykik',
+    className: 'trepur 101',
+    favSubjects: ['staert', 'gnikcams']
 });
 
 const rene = new ProjectManager({
-    name: 'Rene',
-    location: 'Irvine',
+    name: 'rene',
+    location: 'irvine',
     age: 37,
     gender: 'M',
-    favLanguage: 'C++',
-    specialty: 'Architecture',
-    catchPhrase: 'Are you done yet',
-    gradClassName: 'CS2K19',
-    favInstructor: 'Cam'
+    favLanguage: 'c++',
+    specialty: 'web',
+    catchPhrase: 'are you done yet',
+    gradClassName: 'cs2',
+    favInstructor: 'cam'
 });
 
-const rene2 = new ProjectManager({
-    name: 'Rene2',
-    location: 'Costa Mesa',
-    age: 38,
+const ener = new ProjectManager({
+    name: 'ener',
+    location: 'enivri',
+    age: 73,
     gender: 'F',
-    favLanguage: 'C#',
-    specialty: 'Architecture 2',
-    catchPhrase: 'Are you done yet 2',
-    gradClassName: 'CS2K20',
-    favInstructor: 'Cam2'
+    favLanguage: '++c',
+    specialty: 'bew',
+    catchPhrase: 'yet done you are',
+    gradClassName: '2cs',
+    favInstructor: 'mac'
 });
 
 console.log(`========= lambda-Classes =========`);
-console.log(`Instructor:`)
+// Instructor
+console.log(`Instructor 1:`)
 console.log(fred.speak());
-console.log(fred.demo('Obects'));
-console.log(fred2.speak());
-console.log(fred2.demo('Obects 2'));
-console.log(`Student:`);
+console.log(fred.demo('objects'));
+console.log(fred.specialty);
+console.log(fred.favLanguage);
+console.log(fred.catchPhrase);
+console.log(`Instructor 2:`);
+console.log(derf.speak());
+console.log(derf.demo('stcejbo'));
+console.log(derf.specialty);
+console.log(derf.favLanguage);
+console.log(derf.catchPhrase);
+
+//Student
+console.log(`Student 1:`);
 console.log(rupert.speak());
 console.log(rupert.listSubjects());
-console.log(rupert.PRAssignment(`Black cat white cat`));
+console.log(rupert.PRAssignment(`black cat white cat`));
 console.log(rupert.sprintChallenge('crying'));
-console.log(rupert2.speak());
-console.log(rupert2.listSubjects());
-console.log(rupert2.PRAssignment(`Black cat white cat 2`));
-console.log(rupert2.sprintChallenge('crying 2'));
+console.log(rupert.previousBackground);
+console.log(rupert.className);
+console.log(rupert.favSubjects);
+console.log(`Student 2:`);
+console.log(trepur.speak());
+console.log(trepur.listSubjects());
+console.log(trepur.PRAssignment(`cat white cat black`));
+console.log(trepur.sprintChallenge('gniyrc'));
+console.log(trepur.previousBackground);
+console.log(trepur.className);
+console.log(trepur.favSubjects);
+
+//Project Manager
 console.log(`ProjectManager:`);
 console.log(rene.speak())
 console.log(rene.standUp('class'));
-console.log(rene.debugsCode(rupert, 'Crying for treats'));
+console.log(rene.debugsCode(rupert, 'crying for treats'));
 console.log(rene.gradClassName);
 console.log(rene.favInstructor);
-console.log(rene2.speak());
-console.log(rene2.standUp('class2'));
-console.log(rene2.debugsCode(rupert2, 'Crying for MORE treats'));
-console.log(rene2.gradClassName);
-console.log(rene.favInstructor);
-
+console.log(ener.speak());
+console.log(ener.standUp('ssalc'));
+console.log(ener.debugsCode(trepur, 'treats for crying'));
+console.log(ener.gradClassName);
+console.log(ener.favInstructor);
